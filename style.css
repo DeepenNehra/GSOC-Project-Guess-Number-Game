@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6a88, #d66dff, #6a82fb);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    color: #4a90e2;
+}
+
+.input-container {
+    margin: 20px 0;
+    animation: float 3s ease-in-out infinite; /* Add floating animation */
+}
+
+
+
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    width: 150px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #e94e77;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e94e77;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
